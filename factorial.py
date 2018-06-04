@@ -1,4 +1,4 @@
-
+import time
 num = input("please enter a positive real number\n")
 
 def factorial_func(x):
@@ -9,5 +9,8 @@ def factorial_func(x):
 
    return count
 
+
+start = time.time()
 outcome=factorial_func(num)
-print("the factorial of the number " + str(num) + " is " + str(outcome))
+end = time.time()
+print("the factorial of the number " + str(num) + " is " + str(outcome)+ " running time "+str(end-start))
